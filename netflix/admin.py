@@ -22,11 +22,11 @@ class MovieAdmin(admin.ModelAdmin):
         """Render movie video as html image."""
 
         return format_html(
-            '''
+            """
             <video width="320" height="240" controls>
                 <source src="%s" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>''' % movie.file
+            </video>""" % movie.file
         )
 
     preview.short_description = 'Movie image'

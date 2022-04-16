@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="{% static 'netflix/style.css' %}">
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="netflixLogo">
+        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#home">Home</a>  
+      </nav>
+      <nav class="sub-nav">
+        <a href="/login">Login</a>
+      </nav>
+    </header>
+    <section class="main-container" >
+      <div class="location" id="home">
+          <div class="box">
+            <form id="registerForm" action="/register" method="POST">
+                {% csrf_token %}
+                {{ register_form.as_p }}
+                <button type="submit">Register</button>
+            </form>
+          </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

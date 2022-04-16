@@ -18,8 +18,13 @@ from django.urls import path
 from django.conf import settings            # Add this line
 from django.conf.urls.static import static  # Add this line
 
+from netflix.views import index_view # Add this line
+from netflix.views import register_view # Add this line
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index_view, name='home'), # Add this line
+    path('register', register_view, name='register'), # Add this line
 ]
 # Add the lines below
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
