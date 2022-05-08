@@ -20,11 +20,15 @@ from django.conf.urls.static import static  # Add this line
 
 from netflix.views import index_view # Add this line
 from netflix.views import register_view # Add this line
+from netflix.views import login_view # Add this line
+from netflix.views import logout_view # Add this line
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view, name='home'), # Add this line
     path('register', register_view, name='register'), # Add this line
+    path('login', login_view, name='login'), # Add this line
+    path('logout', logout_view, name='logout'), # Add this line
 ]
 # Add the lines below
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

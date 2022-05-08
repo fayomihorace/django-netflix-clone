@@ -21,18 +21,21 @@
         <a href="/">Home</a>  
       </nav>
       <nav class="sub-nav">
-        <a href="/login">Login</a>
+        <a href="/register">Register</a>
       </nav>
     </header>
     <section class="main-container" >
       <div class="location" id="home">
-          <div class="box">
-            <form id="registerForm" action="/register" method="POST">
+        <div class="box">
+            <form id="loginForm" action="/login" method="POST">
                 {% csrf_token %}
-                {{ register_form.as_p }}
-                <button type="submit">Register</button>
+                {% if wrong_credentials %}
+                    <p style="margin-top: 60px">Invalid credentials.</p>
+                {% endif %}
+                {{ login_form.as_p }}
+                <button type="submit">Login</button>
             </form>
-          </div>
+        </div>
       </div>
     </section>
   </div>
