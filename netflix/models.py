@@ -15,7 +15,7 @@ class Category(models.Model):
 
 
 class Tag(models.Model):
-    """Category model class."""
+    """Tag model class."""
 
     name = models.CharField(max_length=CHARS_MAX_LENGTH, blank=True)
     description = models.TextField(blank=True, null=True)
@@ -30,7 +30,7 @@ class Movie(models.Model):
 
     name = models.CharField(max_length=CHARS_MAX_LENGTH, blank=True)
     description = models.TextField(blank=True, null=True)
-    categories = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag)
     watch_count = models.IntegerField(default=0)
     file = models.FileField(upload_to='movies/')

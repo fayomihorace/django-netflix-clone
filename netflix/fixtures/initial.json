@@ -1,0 +1,386 @@
+[
+  {
+    "model": "netflix.Category",
+    "pk": 1,
+    "fields": { "name": "Action" }
+  },
+  {
+    "model": "netflix.Category",
+    "pk": 2,
+    "fields": { "name": "Adventure" }
+  },
+  {
+    "model": "netflix.Tag",
+    "pk": 1,
+    "fields": { "name": "Popular" }
+  },
+  {
+    "model": "netflix.Tag",
+    "pk": 2,
+    "fields": { "name": "Trending now" }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 1,
+    "fields": {
+      "name": "Original",
+      "description": "Original",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "p1.PNG",
+      "file": "p1.PNG",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  }
+]

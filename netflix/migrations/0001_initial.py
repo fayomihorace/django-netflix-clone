@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('file', models.FileField(upload_to='media/')),
                 ('preview_image', models.ImageField(upload_to='media/')),
                 ('date_created', models.DateTimeField(default=django.utils.timezone.now)),
-                ('categories', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='netflix.category')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='netflix.category')),
                 ('tags', models.ManyToManyField(to='netflix.Tag')),
             ],
         ),
