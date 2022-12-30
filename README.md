@@ -11,6 +11,13 @@ Just follow these few step:
 - `pip install -r requirements.txt`
 - `python manage.py migrate`
 
+## Load fixtures (Optional)
+- `python manage.py loaddata netflix/fixtures/initial.json`
+
+## Create superuser (Optional)
+- `python manage.py createsuperuser`
+
+
 ## Start the developement server
 - `python manage.py runserver`
 
