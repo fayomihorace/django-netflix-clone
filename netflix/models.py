@@ -37,6 +37,5 @@ class Movie(models.Model):
     preview_image = models.ImageField(upload_to='preview_images/')
     date_created = models.DateTimeField(auto_now_add=True)
 
-
     def __str__(self):
         return self.name
