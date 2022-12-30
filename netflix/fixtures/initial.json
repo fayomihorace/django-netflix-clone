@@ -27,9 +27,9 @@
       "description": "The Road trick description",
       "category": 1,
       "tags": [1, 2],
-      "watch_count": 5,
-      "preview_image": "preview_images/movie1.png",
-      "file": "movies/mv1.mp4",
+      "watch_count": 10,
+      "preview_image": "preview_images/p1.PNG",
+      "file": "movies/blank.mp4",
       "date_created": "2022-05-05 14:08:15.221580"
     }
   },
@@ -37,13 +37,153 @@
     "model": "netflix.Movie",
     "pk": 2,
     "fields": {
-      "name": "Original",
-      "description": "Original",
+      "name": "Wynonna",
+      "description": "Wynonna",
+      "category": 1,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "preview_images/p2.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 3,
+    "fields": {
+      "name": "The Ballad of Hug SANCHEZ",
+      "description": "The Ballad of Hug SANCHEZ",
+      "category": 1,
+      "tags": [2],
+      "watch_count": 2,
+      "preview_image": "preview_images/p3.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 4,
+    "fields": {
+      "name": "Grey's anatomy",
+      "description": "Grey's anatomy",
+      "category": 1,
+      "tags": [],
+      "watch_count": 1,
+      "preview_image": "preview_images/p4.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 5,
+    "fields": {
+      "name": "Step Up 2",
+      "description": "Step Up 2",
+      "category": 1,
+      "tags": [1, 2],
+      "watch_count": 25,
+      "preview_image": "preview_images/p5.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 6,
+    "fields": {
+      "name": "Liquid Science",
+      "description": "Liquid Science",
+      "category": 1,
+      "tags": [1, 2],
+      "watch_count": 11,
+      "preview_image": "preview_images/p6.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 7,
+    "fields": {
+      "name": "Lost in space",
+      "description": "Lost in space",
       "category": 2,
       "tags": [1],
       "watch_count": 5,
-      "preview_image": "preview_images/movie2.png",
-      "file": "movies/mv2.mp4",
+      "preview_image": "preview_images/r1.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 8,
+    "fields": {
+      "name": "Queen of the South",
+      "description": "Queen of the South",
+      "category": 2,
+      "tags": [],
+      "watch_count": 5,
+      "preview_image": "preview_images/r2.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 9,
+    "fields": {
+      "name": "Undercover Boss",
+      "description": "Undercover Boss",
+      "category": 2,
+      "tags": [1, 2],
+      "watch_count": 5,
+      "preview_image": "preview_images/r3.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 10,
+    "fields": {
+      "name": "Penny Dreadful",
+      "description": "Penny Dreadful",
+      "category": 2,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "preview_images/r4.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 11,
+    "fields": {
+      "name": "Money heist",
+      "description": "Money heist",
+      "category": 2,
+      "tags": [2],
+      "watch_count": 5,
+      "preview_image": "preview_images/r5.PNG",
+      "file": "movies/blank.mp4",
+      "date_created": "2022-05-05 14:08:15.221580"
+    }
+  },
+  {
+    "model": "netflix.Movie",
+    "pk": 12,
+    "fields": {
+      "name": "The Week of",
+      "description": "The Week of",
+      "category": 2,
+      "tags": [1],
+      "watch_count": 5,
+      "preview_image": "preview_images/r6.PNG",
+      "file": "movies/blank.mp4",
       "date_created": "2022-05-05 14:08:15.221580"
     }
   }
