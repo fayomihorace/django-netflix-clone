@@ -7,11 +7,40 @@ from django.contrib.auth import authenticate, login, logout
 
 from .forms import RegisterForm
 from .forms import LoginForm
+from .models import Movie
+
+PAGE_SIZE_PER_CATEGORY = 20
 
 
 def index_view(request):
     """Home page view."""
-    return render(request, 'netflix/index.html')
+    # We get the movies matching the category `Action` and limit the number of
+    # movies to PAGE_SIZE_PER_CATEGORY = 20
+    action_movies = Movie.objects.filter(category__pk=1)[:PAGE_SIZE_PER_CATEGORY]
+    # We do the same for `Adventure` category
+    adventure_movies = Movie.objects.filter(category__pk=2)[:PAGE_SIZE_PER_CATEGORY]
+    data = {
+        "Action": action_movies,
+        "Adventure": adventure_movies
+    }
+    # We return the response with the data
+    return render(request, 'netflix/index.html', {'data': data.items()})
+
+
+def watch_movie_view(request):
+    """Watch view."""
+    # The primary key of the movie the user want to watch is sent by GET parameters.
+    # We retrieve that pk.
+    movie_pk = request.GET.get('movie_pk')
+    # We try to get from the database the movie with the given pk 
+    try:
+        movie = Movie.objects.get(pk=movie_pk)
+    except Movie.DoesNotExist:
+        # if that movie doesn't exist, Movie.DoesNotExist exception is raised
+        # and we then catch it and set the url to None instead
+        movie = None
+    return render(request, 'netflix/watch_movie.html', {'movie': movie})
+
 
 def register_view(request):
     """Registration view."""
