@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <header>
       <div class="netflixLogo">
-        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
+        <a id="logo" href="/"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
       </div>      
       <nav class="main-nav">                
         <a href="#home">Home</a>
@@ -26,7 +26,14 @@
         <a target="_blank" href="https://codepen.io/cb2307/full/NzaOrm">Portfolio</a>        
       </nav>
       <nav class="sub-nav">
-        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="#"></a>
+        <form action="/" method="POST">
+            {% csrf_token %}
+            {{ search_form.as_p }}
+            <button type="submit">
+              <i class="fas fa-search sub-nav-logo"></i>
+            </button>
+        </form>
         <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
         {% if request.user.is_authenticated %}
           {{ request.user }}
@@ -37,7 +44,7 @@
       </nav>      
     </header>
     <!-- END OF HEADER -->
-    
+
     <!-- MAIN CONTAINER -->
     <section class="main-container">
       <div class="location" id="home">

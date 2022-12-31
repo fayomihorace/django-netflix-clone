@@ -7,6 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 
 from .forms import RegisterForm
 from .forms import LoginForm
+from .forms import SearchForm
 from .models import Movie
 
 PAGE_SIZE_PER_CATEGORY = 20
@@ -14,17 +15,25 @@ PAGE_SIZE_PER_CATEGORY = 20
 
 def index_view(request):
     """Home page view."""
-    # We get the movies matching the category `Action` and limit the number of
-    # movies to PAGE_SIZE_PER_CATEGORY = 20
-    action_movies = Movie.objects.filter(category__pk=1)[:PAGE_SIZE_PER_CATEGORY]
-    # We do the same for `Adventure` category
-    adventure_movies = Movie.objects.filter(category__pk=2)[:PAGE_SIZE_PER_CATEGORY]
-    data = {
-        "Action": action_movies,
-        "Adventure": adventure_movies
-    }
+    # We define the list of categories we want to display
+    categories_to_display = ['Action', 'Adventure']
+
+    data = {}
+    # We create a dictionary that map each category with the it movies
+    for category_name in categories_to_display:
+        movies = Movie.objects.filter(category__name=category_name)
+        if request.method == 'POST':
+            search_text = request.POST.get('search_text')
+            movies = movies.filter(name__icontains=search_text)
+        # we limit the number of movies to PAGE_SIZE_PER_CATEGORY = 20
+        data[category_name] = movies[:PAGE_SIZE_PER_CATEGORY]
+
+    search_form = SearchForm()
     # We return the response with the data
-    return render(request, 'netflix/index.html', {'data': data.items()})
+    return render(request, 'netflix/index.html', {
+        'data': data.items(),
+        'search_form': search_form
+    })
 
 
 def watch_movie_view(request):

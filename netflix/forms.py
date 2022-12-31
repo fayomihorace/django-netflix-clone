@@ -45,3 +45,11 @@ class LoginForm(forms.Form):
 
     email = forms.EmailField(label="Email Address")
     password = forms.CharField(label="Password", widget=forms.PasswordInput)
+
+
+class SearchForm(forms.Form):
+    """Search form class."""
+    search_text = forms.CharField(
+        label="",
+        widget=forms.TextInput(attrs={'placeholder': 'Search'})
+    )

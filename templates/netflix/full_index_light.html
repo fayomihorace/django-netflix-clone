@@ -26,7 +26,14 @@
         <a target="_blank" href="https://codepen.io/cb2307/full/NzaOrm">Portfolio</a>        
       </nav>
       <nav class="sub-nav">
-        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="#"></a>
+        <form action="/" method="POST">
+            {% csrf_token %}
+            {{ search_form.as_p }}
+            <button type="submit">
+              <i class="fas fa-search sub-nav-logo"></i>
+            </button>
+        </form>
         <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
         {% if request.user.is_authenticated %}
           {{ request.user }}
@@ -34,7 +41,7 @@
         {% else %}
           <a href="/register">Register</a><a href="/login">Login</a>
         {% endif %}
-      </nav>      
+      </nav> 
     </header>
     <!-- END OF HEADER -->
     
