@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.contrib import auth
 
+from netflix.models import Category, Movie
+
 
 TEST_DATA = {
     "firstname": "John",
@@ -13,6 +15,40 @@ TEST_DATA = {
     "password": "NetflixClone2022",
     "password_conf": "NetflixClone2022"
 }
+
+
+class IndexTests(TestCase):
+
+    def setUp(self):
+        self.category = Category.objects.create(name="Action")
+        self.spider_man_movie = Movie.objects.create(
+            name="Spider man",
+            category=self.category
+        )
+        self.avatar_movie = Movie.objects.create(
+            name="Avatar",
+            category=self.category
+        )
+
+    def test_index_render_all_movies(self):
+        response = self.client.get("/")
+        # make sure index displays the two movies
+        self.assertContains(response, self.spider_man_movie.name)
+        self.assertContains(response, self.avatar_movie.name)
+
+    def test_index_render_all_movies(self):
+        # make sure only `Avatar` movie is rendered when the search term is `ava`
+        # This also asserts that the search is case insensitive as the real name
+        # is `Avatar` with upper `A` and we search `ava`.
+        response = self.client.post(
+            "/",
+            data={"search_text": "avat"}
+        )
+        # make sure index displays `Avatar` movie
+        self.assertContains(response, self.avatar_movie.name)
+        # Make sure index doesn't display `Spider man` movie
+        self.assertNotContains(response, self.spider_man_movie.name)
+
 
 # Create your tests here.
 class RegisterTests(TestCase):
