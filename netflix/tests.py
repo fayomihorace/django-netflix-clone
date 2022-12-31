@@ -36,7 +36,7 @@ class IndexTests(TestCase):
         self.assertContains(response, self.spider_man_movie.name)
         self.assertContains(response, self.avatar_movie.name)
 
-    def test_index_render_all_movies(self):
+    def test_index_filter_movies(self):
         # make sure only `Avatar` movie is rendered when the search term is `ava`
         # This also asserts that the search is case insensitive as the real name
         # is `Avatar` with upper `A` and we search `ava`.
@@ -141,7 +141,7 @@ class LoginTests(TestCase):
         self.assertFalse(auth.get_user(self.client).is_authenticated)
         response = self.client.post(
             "/login",
-            data={"email": self.user.username, "password": "self.user_password"}
+            data={"email": self.user.username, "password": "Wrong password"}
         )
         self.assertContains(response, 'Invalid credentials.')
         self.assertFalse(auth.get_user(self.client).is_authenticated)
