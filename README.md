@@ -5,6 +5,9 @@ A simple full-stack clone of Netflix website using Django
 If you're already familiar with Django, you don't need to follow the tutorial.
 Just follow these few step:
 
+## Demo
+https://morning-tree-7095.fly.dev/
+
 ## Setup the project
 - `virtualenv venv` (make sure you have `virtualenv` installed)
 - `source venv/bin/activate`
