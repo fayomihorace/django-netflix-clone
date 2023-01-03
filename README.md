@@ -25,3 +25,4 @@ https://morning-tree-7095.fly.dev/
 - `python manage.py runserver`
 
 ## Run tests
+- `python manage.py test`
